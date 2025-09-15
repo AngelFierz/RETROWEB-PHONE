@@ -38,7 +38,7 @@ keys.forEach(key => {
       confirmLetter();
       lastKey = null;
       pressCount = 0;
-    }, 1000); // tiempo para confirmar letra
+    }, 1000); // tiempo para confirmar la letra elegida, aca tipo A o B o C
 
     const letters = buttons[keyValue];
     if (letters) {
@@ -51,7 +51,7 @@ keys.forEach(key => {
 deleteBtn.addEventListener('click', () => {
   output = output.slice(0, -1);
   outputText.textContent = output;
-  updateTV(output); // ← actualiza la TV al borrar
+  updateTV(output); // actualiza la tv al borrarla oullea
   lastKey = null;
   pressCount = 0;
   clearTimeout(timeout);
@@ -68,7 +68,7 @@ function confirmLetter() {
 }
 
 const computerTrigger = document.getElementById('computer-trigger');
-const computerSound = new Audio('images/windows-xp-startup_1ph012n.mp3'); // ← tú defines el archivo
+const computerSound = new Audio('images/windows-xp-startup_1ph012n.mp3'); 
 
 computerTrigger.addEventListener('click', () => {
   computerSound.currentTime = 0;
@@ -80,11 +80,11 @@ function updateTV(text) {
 
   if (lowerText.includes('narison')) {
     tvContent.src = 'images/narison.png';
-  } else if (lowerText.includes('fire')) {
-    tvContent.src = 'assets/images/fire.gif';
-  } else if (lowerText.includes('error')) {
+  } else if (lowerText.includes('niggrs')) {
+    tvContent.src = 'assets/images/ollea.gif';
+  } else if (lowerText.includes('reyrey')) {
     tvContent.src = 'assets/images/glitch.gif';
   } else {
-    tvContent.src = 'images/Television_static.gif'; // pantalla vacía
+    tvContent.src = 'images/Television_static.gif'; // pantalla vacía, solo el gif duhhh
   }
 }
