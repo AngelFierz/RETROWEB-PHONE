@@ -19,7 +19,7 @@ let output = '';
 const outputText = document.getElementById('output-text');
 const keys = document.querySelectorAll('.key');
 const deleteBtn = document.getElementById('delete');
-const tvContent = document.getElementById('tv-content'); // ← Televisión
+const tvContent = document.getElementById('tv-content'); // Televisión
 
 keys.forEach(key => {
   key.addEventListener('click', () => {
@@ -88,3 +88,4 @@ function updateTV(text) {
     tvContent.src = 'images/Television_static.gif'; // pantalla vacía, solo el gif duhhh
   }
 }
+
